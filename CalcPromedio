@@ -1,0 +1,11 @@
+Algoritmo CalcPromedio
+	Definir Num1, Num2, Promedio Como Entero
+	
+	Escribir ("Ingrese un número:")
+	Leer Num1
+	Escribir("Ingrese otro número:")
+	Leer Num2
+	
+	Promedio = (Num1+Num2)/2
+	Escribir ("El promedio es: "), Promedio
+FinAlgoritmo
