@@ -1,0 +1,19 @@
+Algoritmo PromedioTemp
+	Definir Temp1, Temp2, Temp3, Temp4, Temp5, Promedio Como Real
+	
+	Escribir ("Ingrese la primera temperatura registrada: ")
+	Leer Temp1
+	Escribir ("Ingrese la segunda temperatura registrada: ")
+	Leer Temp2
+	Escribir ("Ingrese la tercera temperatura registrada: ")
+	Leer Temp3
+	Escribir ("Ingrese la cuarta temperatura registrada: ")
+	Leer Temp4
+	Escribir ("Ingrese la quinta temperatura registrada: ")
+	Leer Temp5
+	
+	Promedio = (Temp1+Temp2+Temp3+Temp4+Temp5)/5
+	
+	Escribir ("El promedio de temperatura del día es: ") Promedio
+	
+FinAlgoritmo
