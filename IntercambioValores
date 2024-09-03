@@ -1,0 +1,19 @@
+Algoritmo IntercambioValores
+	Definir Num1, Num2, Temporal Como Real
+	
+	Num1 = 20.5
+	Num2 = 4.8
+
+	Escribir ("Los valores iniciales de las variables son: ")
+	Escribir ("Número 1: ") Num1
+	Escribir ("Número 2: ") Num2
+	
+	Temporal = Num1
+	Num1 = Num2
+	Num2 = Temporal
+	
+	Escribir ("Los valores intercambiados de las variables son: ")
+	Escribir ("Número 1: ") Num1
+	Escribir ("Número 2: ") Num2
+	
+FinAlgoritmo
