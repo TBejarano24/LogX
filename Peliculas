@@ -1,0 +1,43 @@
+Algoritmo Peliculas
+	Definir TipoPel, Horario Como Caracter
+	Definir MontoTotal Como Real
+	
+	Escribir ("Ingrese el tipo de película (A, B, C): ")
+	Leer TipoPel
+	Escribir ("Ingrese el horario que desea para la película (Normal, Reducido): ")
+	Leer Horario
+	
+	Si Mayusculas(TipoPel) = "A" Entonces
+		Si Minusculas(Horario) = "normal" Entonces
+			MontoTotal = 1200 * 0.2
+		SiNo
+			Si Minusculas(Horario) = "reducido" Entonces
+				MontoTotal = 1000 * 0.2
+			FinSi
+		FinSi
+	SiNo
+		Si Mayusculas(TipoPel) = "B" Entonces
+			Si Minusculas(Horario) = "normal" Entonces
+				MontoTotal = 1500 * 0.133
+			SiNo
+				Si Minusculas(Horario) = "reducido" Entonces
+					MontoTotal = 1300 * 0.133
+				FinSi
+			FinSi
+		SiNo
+			Si Mayusculas(TipoPel) = "C" Entonces
+				Si Minusculas(Horario) = "normal" Entonces
+					MontoTotal = 1800
+				SiNo
+					Si Minusculas(Horario) = "reducido" Entonces
+						MontoTotal = 1800
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Escribir ("Tipo de película seleccionada: ") TipoPel
+	Escribir ("Monto a pagar (Con descuento incluido): ") MontoTotal
+	
+FinAlgoritmo
