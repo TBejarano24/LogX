@@ -1,0 +1,14 @@
+Algoritmo BucleMasCinco
+	
+	Definir num Como Entero
+	
+	num = 100
+	
+	Mientras num < 150 Hacer
+		Escribir ("El valor actual del número es: ") num
+		num = num + 5
+		Escribir ("El valor del número +5 es: ") num
+		Escribir ("")
+	FinMientras
+	
+FinAlgoritmo
