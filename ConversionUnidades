@@ -1,0 +1,56 @@
+Algoritmo ConversionUnidades
+	
+	Definir cantidad Como Real
+	Definir unidadOrigen, unidadDestino Como Caracter
+	Definir contador Como Entero
+	
+	Mientras contador < 6 Hacer
+		Escribir ("Ingrese la cantidad a convertir: ")
+		Leer cantidad
+		Escribir ("Ingrese la unidad de origen: ")
+		Leer unidadOrigen
+		Escribir ("Ingrese la unidad de destino: ")
+		Leer unidadDestino
+		
+		Escribir ("")
+		
+		Si Minusculas(unidadOrigen) = "gramos" Entonces
+			cantidad = cantidad * 0.001
+			Escribir unidadOrigen (" a ") unidadDestino
+			Escribir cantidad
+		SiNo
+			Si Minusculas(unidadOrigen) = "kilogramos" Entonces
+				cantidad = cantidad * 1000
+				Escribir unidadOrigen (" a ") unidadDestino
+				Escribir cantidad
+			SiNo
+				Si Minusculas(unidadOrigen) = "celsius" Entonces
+					cantidad = cantidad * (9/5) + 32
+					Escribir unidadOrigen (" a ") unidadDestino
+					Escribir cantidad
+				SiNo
+					Si Minusculas(unidadOrigen) = "farenheit" Entonces
+						cantidad = (cantidad - 32) * (5/9)
+						Escribir unidadOrigen (" a ") unidadDestino
+						Escribir cantidad
+					SiNo
+						Si Minusculas(unidadOrigen) = "metros" Entonces
+							cantidad = cantidad / 1000
+							Escribir unidadOrigen (" a ") unidadDestino
+							Escribir cantidad
+						SiNo
+							Si Minusculas(unidadOrigen) = "kilometros" Entonces
+								cantidad = cantidad * 1000
+								Escribir unidadOrigen (" a ") unidadDestino
+								Escribir cantidad
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		contador = contador + 1
+		Escribir ("")
+	FinMientras
+	
+FinAlgoritmo
