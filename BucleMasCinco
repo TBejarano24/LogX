@@ -4,7 +4,7 @@ Algoritmo BucleMasCinco
 	
 	num = 100
 	
-	Mientras num < 150 Hacer
+	Mientras num <= 150 Hacer
 		Escribir ("El valor actual del número es: ") num
 		num = num + 5
 		Escribir ("El valor del número +5 es: ") num
