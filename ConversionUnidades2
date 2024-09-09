@@ -1,0 +1,65 @@
+Funcion conversion (cant, uniOrig, UniDest)
+	Si Minusculas(uniOrig) = "gramos" Entonces
+		cant = cant / 1000
+		Escribir uniOrig (" a ") uniDest
+		Escribir cant
+	SiNo
+		Si Minusculas(uniOrig) = "kilogramos" Entonces
+			cant = cant * 1000
+			Escribir uniOrig (" a ") uniDest
+			Escribir cant
+		SiNo
+			Si Minusculas(uniOrig) = "celsius" Entonces
+				cant = cant * (9/5) + 32
+				Escribir uniOrig (" a ") uniDest
+				Escribir cant
+			SiNo
+				Si Minusculas(uniOrig) = "farenheit" Entonces
+					cant = (cant - 32) * (5/9)
+					Escribir uniOrig (" a ") uniDest
+					Escribir cant
+				SiNo
+					Si Minusculas(uniOrig) = "metros" Entonces
+						cant = cant / 1000
+						Escribir uniOrig (" a ") uniDest
+						Escribir cant
+					SiNo
+						Si Minusculas(uniOrig) = "kilometros" Entonces
+							cant = cant * 1000
+							Escribir uniOrig (" a ") uniDest
+							Escribir cant
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo ConversionUnidades
+		
+	Definir cantidad Como Real
+	Definir unidadOrigen, unidadDestino Como Caracter
+	Definir contador Como Entero
+		
+	contador = 0
+	
+	Mientras contador < 6 Hacer
+		Escribir ("Ingrese la cantidad a convertir: ")
+		Leer cantidad
+		Escribir ("Ingrese la unidad de origen: ")
+		Leer unidadOrigen
+		Escribir ("Ingrese la unidad de destino: ")
+		Leer unidadDestino
+		
+		Escribir ("")
+		
+		conversion(cantidad, unidadOrigen, unidadDestino)
+		
+		contador = contador + 1
+		
+		Escribir ("")
+		
+	FinMientras
+		
+FinAlgoritmo
