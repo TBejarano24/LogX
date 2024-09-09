@@ -3,13 +3,14 @@ Algoritmo VectorMenor
 	Dimension vector[6]
 	Definir men, posicion Como Entero
 	
-	men = 10000000000
-	
 	Para i = 0 Hasta 5 Hacer
 		Leer vector[i]
 	FinPara
-	
+
+	men = vector[0]
+
 	Para i = 0 Hasta 5 Hacer
+		
 		Si vector[i] < men Entonces
 			men = vector[i]
 			posicion = i
