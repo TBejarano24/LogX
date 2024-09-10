@@ -7,8 +7,9 @@ Algoritmo MatrizFruta
 	
 	Fruta = ""
 	Prueba = Falso
-	Posicion = 0
-	
+	PosicionF = 0
+	PosicionC = 0
+
 	Para F = 0 Hasta 3 Hacer
 		Para C = 0 Hasta 3 Hacer
 			Escribir ("Ingrese una fruta: ")
