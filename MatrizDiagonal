@@ -3,12 +3,15 @@ Algoritmo MatrizDiagonal2
 	Dimension Matriz[6,6]
 	Definir F, C Como Entero
 	
-	Matriz[0,5] = 1
-	Matriz[1,4] = 1
-	Matriz[2,3] = 1
-	Matriz[3,2] = 1
-	Matriz[4,1] = 1
-	Matriz[5,0] = 1
+	Para F = 0 Hasta 5 Hacer
+		Para C = 0 Hasta 5 Hacer
+			Matriz[F,C] = 0
+		FinPara
+	FinPara
+	
+	Para F = 0 Hasta 5 Hacer
+		Matriz[F,5-F] = 1
+	FinPara
 	
 	Para F = 0 Hasta 5 Hacer
 		Para C = 0 Hasta 5 Hacer
