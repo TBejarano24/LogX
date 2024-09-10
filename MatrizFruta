@@ -1,0 +1,40 @@
+Algoritmo MatrizFruta
+	
+	Dimension Matriz[4,4]
+	Definir F, C, PosicionF, PosicionC Como Entero
+	Definir Fruta Como Caracter
+	Definir Prueba Como Logico
+	
+	Fruta = ""
+	Prueba = Falso
+	Posicion = 0
+	
+	Para F = 0 Hasta 3 Hacer
+		Para C = 0 Hasta 3 Hacer
+			Escribir ("Ingrese una fruta: ")
+			Leer Matriz[F,C]
+		FinPara
+	FinPara
+	
+	Escribir ("")
+	Escribir ("¿Qué fruta desea buscar?")
+	Leer Fruta
+	Escribir ("")
+	
+	Para F = 0 Hasta 3 Hacer
+		Para C = 0 Hasta 3 Hacer
+			Si Minusculas(Matriz[F,C]) = Minusculas(Fruta) Entonces
+				Prueba = Verdadero
+				PosicionF = F
+				PosicionC = C
+			FinSi
+		FinPara
+	FinPara
+	
+	Si Prueba = Verdadero Entonces
+		Escribir ("La fruta ") Fruta (" está en la fila ") PosicionF (", columna ") PosicionC
+	SiNo
+		Escribir ("La fruta ") Fruta (" no está en la lista")
+	FinSi
+	
+FinAlgoritmo
