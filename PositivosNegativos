@@ -1,0 +1,34 @@
+Algoritmo PositivosNegativos
+	
+	Dimension Valores[6]
+	Definir Positivos, Negativos, Ceros Como Entero
+	
+	Positivos = 0
+	Negativos = 0
+	Ceros = 0
+
+  Escribir("Ingrese 6 números enteros:")
+
+	Para i = 0 Hasta 5 Hacer
+		Leer Valores[i]
+	FinPara
+	
+	Para i = 0 Hasta 5 Hacer
+		Si Valores[i] > 0 Entonces
+			Positivos = Positivos + 1
+		SiNo
+			Si Valores[i] < 0 Entonces
+				Negativos = Negativos + 1
+			SiNo
+				Ceros = Ceros + 1
+			FinSi
+		FinSi
+	FinPara
+	
+	Escribir ("")
+	Escribir ("De los números ingresados:")
+	Escribir Positivos (" Son positivos")
+	Escribir Negativos (" Son negativos")
+	Escribir Ceros (" Son ceros")
+	
+FinAlgoritmo
